@@ -1,0 +1,4 @@
+name: RInventory
+version: ${project.version}
+main: com.rainchat.rinventory.RInventory
+authors: [rain_chat]
