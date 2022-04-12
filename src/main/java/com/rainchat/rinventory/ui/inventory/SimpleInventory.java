@@ -24,10 +24,11 @@ public class SimpleInventory implements InventoryHolder, Listener {
 
     private HashMap<Integer, SimpleItem> clickableItems;
 
-    public SimpleInventory(Plugin plugin, String name, int size) {
+    public SimpleInventory(String name, int size) {
+        this.title = name;
+        this.guiSize = size;
         this.inventory = Bukkit.createInventory(this, size * 9, name);
         this.clickableItems = new HashMap<>();
-        plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
 
     public void open(Player player) {
