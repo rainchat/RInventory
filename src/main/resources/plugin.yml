@@ -1,4 +1,4 @@
-name: RInventory
+name: RCore
 version: ${project.version}
-main: com.rainchat.rinventory.RInventory
+main: com.rainchat.rinventory.RCore
 authors: [rain_chat]
