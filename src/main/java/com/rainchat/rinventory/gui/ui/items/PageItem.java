@@ -28,6 +28,11 @@ public class PageItem implements BaseItem {
         return null;
     }
 
+    @Override
+    public void setInventory(BaseInventory inventory) {
+
+    }
+
 
     public Consumer<InventoryClickEvent> getInventoryClickEvent() {
         return inventoryClickEvent;
