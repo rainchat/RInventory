@@ -33,16 +33,7 @@ public class ArgsMenu extends SimpleInventory {
 
             Map<String, Object> settings = new CaseInsensitiveStringMap<>((Map<String, Object>) value);
 
-            this.minArgs = Optional.ofNullable(settings.get(MIN_ARGS)).map(String::valueOf).flatMap(Validate::getNumber).map(BigDecimal::intValue).orElse(this.minArgs);
-            this.defaultArgs = Optional.ofNullable(settings.get(DEFAULT_ARGS)).map(String::valueOf).map(s -> s.split(" ")).orElse(this.defaultArgs);
 
-            Optional.ofNullable(settings.get(ARGS)).map(o -> CollectionUtils.createStringListFromObject(o, true)).ifPresent(list -> {
-                this.registeredArgs = list.size();
-                for (int i = 0; i < list.size(); i++) {
-                    this.argToIndexMap.put(list.get(i), i);
-                }
-            });
-            Optional.ofNullable(settings.get(MIN_ARGS_ACTION)).ifPresent(o -> this.minArgsAction.addAll(ActionBuilder.INSTANCE.getActions(this, o)));
         });
 
     }
