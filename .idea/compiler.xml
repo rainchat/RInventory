@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="RInventory" target="1.8.0_281" />
+      <module name="RInventory" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

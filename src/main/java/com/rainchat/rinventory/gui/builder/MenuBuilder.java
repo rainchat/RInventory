@@ -21,8 +21,8 @@ public class MenuBuilder extends Builder<String, ArgsMenu> {
     }
 
     private void registerDefaultMenus() {
-        register(s -> new ArgsMenu(), "args");
-        register(s -> new ArgsMenu(), "page");
+        register(ArgsMenu::new, "args");
+        register(ArgsMenu::new, "page");
 
     }
 
