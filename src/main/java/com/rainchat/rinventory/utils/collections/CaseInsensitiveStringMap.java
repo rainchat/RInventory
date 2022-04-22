@@ -53,7 +53,7 @@ public class CaseInsensitiveStringMap<V> implements Map<String, V> {
 
     @Override
     public V get(Object o) {
-        return this.delegate.get(getLowerCase(o));
+        return this.delegate.get( getLowerCase(o));
     }
 
 
