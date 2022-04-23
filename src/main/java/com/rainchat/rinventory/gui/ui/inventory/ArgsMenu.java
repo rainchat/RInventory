@@ -23,15 +23,22 @@ public class ArgsMenu extends SimpleInventory {
         this.config = config;
 
         config.getNormalizedValues(false).forEach((key, value) -> {
+            System.out.println(key);
+            if (!(value instanceof Map)) {
+                return;
+            }
+            Map<String, Object> test = new CaseInsensitiveStringMap<>((Map<String, Object>) value);
+            for (Object o: test.values()) {
+                System.out.println("" + o);
+            }
+
             if (key.equalsIgnoreCase("menu-settings")) {
 
                 if (!(value instanceof Map)) {
                     return;
                 }
                 Map<String, Object> settings = new CaseInsensitiveStringMap<>((Map<String, Object>) value);
-                for (Object o: settings.values()) {
-                    System.out.println("" + o);
-                }
+
 
             } else if (key.equalsIgnoreCase("menu-items")) {
 
@@ -39,9 +46,6 @@ public class ArgsMenu extends SimpleInventory {
                     return;
                 }
                 Map<String, Object> items = new CaseInsensitiveStringMap<>((Map<String, Object>) value);
-                for (Object o: items.values()) {
-                    System.out.println("" + o);
-                }
 
 
             } else if (key.equalsIgnoreCase("pagination-items")) {
