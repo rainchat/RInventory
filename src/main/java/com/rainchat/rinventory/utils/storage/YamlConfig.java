@@ -7,361 +7,81 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 
 public class YamlConfig implements Config {
 
-
-
     private final File file;
-    private final FileConfiguration fileConfiguration;
+    private final YamlConfiguration configuration = new YamlConfiguration();
 
     /**
-     * Create instance of this class
+     * Create a new config
      *
-     * @param file file
+     * @param file the file
      */
     public YamlConfig(File file) {
-        this.file = Objects.requireNonNull(file, "file cannot be null!");
-        this.fileConfiguration = YamlConfiguration.loadConfiguration(file);
+        this.file = file;
     }
 
     /**
-     * Gets file
+     * Create a new config
      *
-     * @return file
+     * @param plugin   the plugin
+     * @param filename the file name
      */
-    public File getFile() {
-        return this.file;
-    }
-
-    public String getName() {
-        return file.getName();
-    }
-
-    /**
-     * Creates file and include resource to in it.
-     *
-     * @param file         File
-     * @param resourceName resource from resources
-     * @return YamlConfig class
-     */
-
-    public static YamlConfig create(JavaPlugin plugin, File file, String resourceName) {
-        Validate.notNull(plugin, "plugin cannot be null!");
-        Validate.notNull(file, "file cannot be null!");
-        Validate.notNull(resourceName, "resourceName cannot be null!");
-
+    public YamlConfig(Plugin plugin, String filename) {
+        this(new File(plugin.getDataFolder(), filename));
         try {
-            if (!file.exists()) {
-                YamlConfig.createFile(file.getPath());
-
-                InputStream inputStream = plugin.getClass().getResourceAsStream("/" + resourceName);
-                if (inputStream != null) FileUtils.copyInputStreamToFile(inputStream, file);
-            }
-
-            return new YamlConfig(file);
-        } catch (IOException e) {
-            throw new NullPointerException(e.getMessage());
+            plugin.saveResource(filename, false);
+        } catch (IllegalArgumentException e) {
+            // IGNORED
         }
     }
 
-    /**
-     * Creates file and include resource to in it.
-     *
-     * @param path         File url
-     * @param resourceName resource from resources
-     * @return YamlConfig class
-     */
-    
-    public static YamlConfig create(JavaPlugin plugin, String path, String resourceName) {
-        return YamlConfig.create(plugin, new File(plugin.getDataFolder() + "/" + path), resourceName);
+    @Override
+    public YamlConfiguration getOriginal() {
+        return this.configuration;
     }
 
-    /**
-     * Creates file.
-     *
-     * @param file File
-     * @return YamlConfig class
-     */
-    
-    public static YamlConfig create(File file) {
-        YamlConfig.createFile(Objects.requireNonNull(file, "file cannot be null!").getPath());
-        return new YamlConfig(file);
-    }
-
-    /**
-     * Creates file.
-     *
-     * @param path File url
-     * @return YamlConfig class
-     */
-    
-    public static YamlConfig create(String path) {
-        return YamlConfig.create(new File(path));
-    }
-
-    /**
-     * Creates file.
-     *
-     * @param path File path
-     */
-    
-    public static File createFile(String path) {
-        Validate.notNull(path, "path cannot be null!");
-
-        if (new File(path).exists()) return new File(path);
-        path = path.replace("/", "\\");
-        String[] sp = path.split(Pattern.quote("\\"));
-        String folder = path.substring(0, path.length() - sp[sp.length - 1].length());
-
-        try {
-            new File(folder.replace("\\", "/")).mkdirs();
-            new File(path.replace("\\", "/")).createNewFile();
-            return new File(path.replace("\\", "/"));
-        } catch (IOException e) {
-            throw new NullPointerException(e.getMessage());
-        }
-    }
-
-    /**
-     * Gets file configuration
-     *
-     * @return file configuration
-     */
-    
-    public FileConfiguration getFileConfiguration() {
-        return this.fileConfiguration;
-    }
-
-    /**
-     * Saves yml
-     */
-    public void save() {
-        try {
-            this.fileConfiguration.save(this.file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * Reloads yml from cache
-     */
-    public void reload() {
-        try {
-            this.fileConfiguration.load(this.file);
-        } catch (IOException | InvalidConfigurationException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * Deletes yml.
-     *
-     * @return If yml removes successfully, returns true
-     */
-    public boolean delete() {
-        return this.file.delete();
-    }
-
-    public Object get(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.get(path);
-    }
-
+    @Override
     public Object get(String path, Object def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.get(path, def);
+        return this.configuration.get(path, def);
     }
 
+    @Override
     public void set(String path, Object value) {
-        Validate.notNull(path, "path cannot be null!");
-        this.fileConfiguration.set(path, value);
+        this.configuration.set(path, value);
     }
 
-    public boolean isSet(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isSet(path);
+    @Override
+    public boolean contains(String path) {
+        return this.configuration.isSet(path);
     }
 
-    public String getString(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getString(path);
+    @Override
+    public String getName() {
+        return this.file.getName();
     }
 
-    public String getString(String path, String def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getString(path, def);
-    }
-
-    public boolean isString(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isString(path);
-    }
-
-    public int getInt(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getInt(path);
-    }
-
-    public int getInt(String path, int def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getInt(path, def);
-    }
-
-    public boolean isInt(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isInt(path);
-    }
-
-    public boolean getBoolean(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getBoolean(path);
-    }
-
-    public boolean getBoolean(String path, boolean def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getBoolean(path, def);
-    }
-
-    public boolean isBoolean(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isBoolean(path);
-    }
-
-    public double getDouble(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getDouble(path);
-    }
-
-    public double getDouble(String path, double def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getDouble(path, def);
-    }
-
-    public boolean isDouble(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isDouble(path);
-    }
-
-    public long getLong(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getLong(path);
-    }
-
-    public long getLong(String path, long def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getLong(path, def);
-    }
-
-    public boolean isLong(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isLong(path);
-    }
-
-    public List<?> getList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getList(path);
-    }
-
-    public List<?> getList(String path, List<?> def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getList(path, def);
-    }
-
-    public boolean isList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isList(path);
-    }
-
-    public List<String> getStringList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getStringList(path);
-    }
-
-    public List<Integer> getIntegerList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getIntegerList(path);
-    }
-
-    public List<Boolean> getBooleanList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getBooleanList(path);
-    }
-
-    public List<Double> getDoubleList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getDoubleList(path);
-    }
-
-    public List<Float> getFloatList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getFloatList(path);
-    }
-
-    public List<Long> getLongList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getLongList(path);
-    }
-
-    public List<Byte> getByteList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getByteList(path);
-    }
-
-    public List<Character> getCharacterList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getCharacterList(path);
-    }
-
-    public List<Short> getShortList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getShortList(path);
-    }
-
-    public List<Map<?, ?>> getMapList(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getMapList(path);
-    }
-
-    public OfflinePlayer getOfflinePlayer(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getOfflinePlayer(path);
-    }
-
-    public OfflinePlayer getOfflinePlayer(String path, OfflinePlayer def) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getOfflinePlayer(path, def);
-    }
-
-    public boolean isOfflinePlayer(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isOfflinePlayer(path);
-    }
-
-    public ConfigurationSection getConfigurationSection(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.getConfigurationSection(path);
-    }
-
-    public boolean isConfigurationSection(String path) {
-        Validate.notNull(path, "path cannot be null!");
-        return this.fileConfiguration.isConfigurationSection(path);
+    @Override
+    public void addDefault(String path, Object value) {
+        this.configuration.addDefault(path, value);
     }
 
     @Override
     public Map<String, Object> getValues(String path, boolean deep) {
         if (path == null || path.isEmpty()) {
-            return this.getValues(deep);
+            return this.configuration.getValues(deep);
         } else {
-            return Optional.ofNullable(this.getConfigurationSection(path))
+            return Optional.ofNullable(this.configuration.getConfigurationSection(path))
                     .map(configurationSection -> configurationSection.getValues(deep))
                     .orElse(Collections.emptyMap());
         }
@@ -380,4 +100,40 @@ public class YamlConfig implements Config {
         return object instanceof ConfigurationSection;
     }
 
+    @Override
+    public void setup() {
+        if (!this.file.exists()) {
+            File parentFile = this.file.getAbsoluteFile().getParentFile();
+            if (parentFile != null && !parentFile.exists()) {
+                parentFile.mkdirs();
+            }
+            try {
+                this.file.createNewFile();
+            } catch (IOException e) {
+                LOGGER.log(Level.WARNING, e, () -> "Something wrong when creating " + this.file.getName());
+            }
+        }
+        this.configuration.options().copyDefaults(true);
+        try {
+            this.configuration.load(this.file);
+        } catch (IOException | InvalidConfigurationException e) {
+            LOGGER.log(Level.WARNING, e, () -> "Something wrong when loading " + this.file.getName());
+        }
+    }
+
+    @Override
+    public void save() {
+        try {
+            this.configuration.save(this.file);
+        } catch (IOException e) {
+            LOGGER.log(Level.WARNING, e, () -> "Something wrong when saving " + this.file.getName());
+        }
+    }
+
+    @Override
+    public void reload() {
+        List<String> keys = new ArrayList<>(this.configuration.getKeys(false));
+        keys.forEach(key -> this.configuration.set(key, null));
+        setup();
+    }
 }
