@@ -39,8 +39,12 @@ public class MenuBuilder extends Builder<String, ArgsMenu> {
                 .map(String::valueOf)
                 .flatMap(string -> build(string, name))
                 .orElseGet(() -> build("args", name).orElse(null));
+
         if (menu != null) {
             menu.setFromConfig(config);
+            System.out.println("Меню создалось");
+        } else {
+            System.out.println("Меню не создалось");
         }
         return menu;
     }
