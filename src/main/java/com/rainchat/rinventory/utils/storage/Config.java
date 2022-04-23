@@ -40,6 +40,9 @@ public interface  Config {
         return getNormalizedValues("", deep);
     }
 
+    String getName();
+
+
     Map<String, Object> getValues(String path, boolean deep);
 
     /**

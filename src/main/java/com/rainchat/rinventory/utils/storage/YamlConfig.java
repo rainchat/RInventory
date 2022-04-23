@@ -15,7 +15,35 @@ import java.io.InputStream;
 import java.util.*;
 import java.util.regex.Pattern;
 
-public class YamlConfig implements Config{
+public class YamlConfig implements Config {
+
+
+
+    private final File file;
+    private final FileConfiguration fileConfiguration;
+
+    /**
+     * Create instance of this class
+     *
+     * @param file file
+     */
+    public YamlConfig(File file) {
+        this.file = Objects.requireNonNull(file, "file cannot be null!");
+        this.fileConfiguration = YamlConfiguration.loadConfiguration(file);
+    }
+
+    /**
+     * Gets file
+     *
+     * @return file
+     */
+    public File getFile() {
+        return this.file;
+    }
+
+    public String getName() {
+        return file.getName();
+    }
 
     /**
      * Creates file and include resource to in it.
@@ -24,7 +52,7 @@ public class YamlConfig implements Config{
      * @param resourceName resource from resources
      * @return YamlConfig class
      */
-    
+
     public static YamlConfig create(JavaPlugin plugin, File file, String resourceName) {
         Validate.notNull(plugin, "plugin cannot be null!");
         Validate.notNull(file, "file cannot be null!");
@@ -100,30 +128,6 @@ public class YamlConfig implements Config{
         } catch (IOException e) {
             throw new NullPointerException(e.getMessage());
         }
-    }
-
-
-    private final File file;
-    private final FileConfiguration fileConfiguration;
-
-    /**
-     * Create instance of this class
-     *
-     * @param file file
-     */
-    public YamlConfig(File file) {
-        this.file = Objects.requireNonNull(file, "file cannot be null!");
-        this.fileConfiguration = YamlConfiguration.loadConfiguration(file);
-    }
-
-    /**
-     * Gets file
-     *
-     * @return file
-     */
-    
-    public File getFile() {
-        return this.file;
     }
 
     /**

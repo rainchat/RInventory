@@ -35,6 +35,7 @@ public class SimpleInventory {
             this.inventory.setItem(entryMap.getKey(), entryMap.getValue().getItem());
         }
 
+        setInventory(new InvBuilder().size(guiSize).title(title).getInventory());
         if (simpleInventory == null || !simpleInventory.equals(this)) {
             InventoryManager.getContent().put(player.getUniqueId(), this);
         }
@@ -74,7 +75,7 @@ public class SimpleInventory {
     }
 
     public Inventory getInventory() {
-        return new InvBuilder().size(guiSize).title(title).getInventory();
+        return inventory;
     }
 
 

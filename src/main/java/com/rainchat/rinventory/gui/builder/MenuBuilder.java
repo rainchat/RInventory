@@ -23,7 +23,6 @@ public class MenuBuilder extends Builder<String, ArgsMenu> {
     private void registerDefaultMenus() {
         register(ArgsMenu::new, "args");
         register(ArgsMenu::new, "page");
-
     }
 
     /**
@@ -34,7 +33,7 @@ public class MenuBuilder extends Builder<String, ArgsMenu> {
      *
      * @return the menu
      */
-    public SimpleInventory getMenu(String name, Config config) {
+    public ArgsMenu getMenu(String name, Config config) {
         Map<String, Object> keys = new CaseInsensitiveStringMap<>(config.getNormalizedValues(true));
         ArgsMenu menu = Optional.ofNullable(keys.get("menu-settings.menu-type"))
                 .map(String::valueOf)
