@@ -1,4 +1,4 @@
-package com.rainchat.rinventory.utils.scheduler;
+package com.rainchat.rinventory.scheduler;
 
 import org.apache.commons.lang.Validate;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -12,6 +12,7 @@ public final class RScheduler {
 
     private final JavaPlugin plugin;
     private boolean async;
+    private boolean cancel;
     private long after;
     private Long every;
 
@@ -24,6 +25,7 @@ public final class RScheduler {
     public RScheduler(JavaPlugin plugin, boolean async) {
         this.plugin = Objects.requireNonNull(plugin, "plugin cannot be null!");
         this.async = async;
+        this.cancel = false;
     }
 
     /**
@@ -66,6 +68,24 @@ public final class RScheduler {
     public RScheduler every(long every) {
         this.every = every;
         return this;
+    }
+
+    /**
+     * Checks will scheduler is cancel?
+     *
+     * @return If scheduler is cancel, returns true.
+     */
+    public boolean isCancel() {
+        return cancel;
+    }
+
+    /**
+     * Sets calncel mode of scheduler.
+     *
+     * @return This class.
+     */
+    public void setCancel(boolean cancel) {
+        this.cancel = cancel;
     }
 
     /**
@@ -122,6 +142,8 @@ public final class RScheduler {
                 taskConsumer.accept(this);
             }
         };
+
+        if (cancel) return this;
 
         if (this.async) {
             if (this.every == null) bukkitRunnable.runTaskLaterAsynchronously(this.plugin, this.after);

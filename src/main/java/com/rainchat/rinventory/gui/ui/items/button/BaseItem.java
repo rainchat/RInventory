@@ -1,15 +1,18 @@
-package com.rainchat.rinventory.gui.ui.items;
+package com.rainchat.rinventory.gui.ui.items.button;
 
 import com.rainchat.rinventory.gui.ui.inventory.BaseInventory;
 import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public interface BaseItem {
 
     ItemStack getItem();
 
-    BaseInventory getInventory();
+    SimpleInventory getInventory();
 
-    void setInventory(BaseInventory inventory);
+    void setInventory(SimpleInventory inventory);
+
+    String getName();
+
+    void setName(String name);
 }

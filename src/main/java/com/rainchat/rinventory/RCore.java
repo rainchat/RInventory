@@ -1,7 +1,7 @@
 package com.rainchat.rinventory;
 
 import com.rainchat.rinventory.gui.manager.InventoryManager;
-import com.rainchat.rinventory.utils.scheduler.RScheduler;
+import com.rainchat.rinventory.scheduler.RScheduler;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;

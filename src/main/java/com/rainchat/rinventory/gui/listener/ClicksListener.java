@@ -2,8 +2,7 @@ package com.rainchat.rinventory.gui.listener;
 
 import com.rainchat.rinventory.gui.manager.InventoryManager;
 import com.rainchat.rinventory.gui.ui.click.BaseClick;
-
-import com.rainchat.rinventory.gui.ui.items.SimpleItem;
+import com.rainchat.rinventory.gui.ui.items.button.SimpleItem;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -32,6 +31,9 @@ public class ClicksListener implements Listener {
 
             if (event.getClickedInventory().equals(hInventory.getInventory())) {
                 SimpleItem  simpleItem = hInventory.getItem(event.getSlot());
+                if (simpleItem == null) {
+                    return;
+                }
                 simpleItem.getInventoryClickEvent().accept(new BaseClick(hInventory, simpleItem,event));
             }
         });

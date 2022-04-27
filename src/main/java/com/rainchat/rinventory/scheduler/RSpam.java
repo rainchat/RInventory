@@ -1,4 +1,4 @@
-package com.rainchat.rinventory.utils.scheduler;
+package com.rainchat.rinventory.scheduler;
 
 import com.rainchat.rinventory.RCore;
 

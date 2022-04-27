@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.ui.click;
 
 import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
-import com.rainchat.rinventory.gui.ui.items.SimpleItem;
+import com.rainchat.rinventory.gui.ui.items.button.SimpleItem;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;

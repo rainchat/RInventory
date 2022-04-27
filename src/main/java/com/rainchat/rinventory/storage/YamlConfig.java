@@ -1,21 +1,14 @@
-package com.rainchat.rinventory.utils.storage;
+package com.rainchat.rinventory.storage;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.Validate;
-import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.*;
 import java.util.logging.Level;
-import java.util.regex.Pattern;
 
 public class YamlConfig implements Config {
 

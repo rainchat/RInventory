@@ -1,6 +1,7 @@
-package com.rainchat.rinventory.gui.ui.items;
+package com.rainchat.rinventory.gui.ui.items.button;
 
 import com.rainchat.rinventory.gui.ui.inventory.BaseInventory;
+import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
@@ -24,12 +25,22 @@ public class PageItem implements BaseItem {
     }
 
     @Override
-    public BaseInventory getInventory() {
+    public SimpleInventory getInventory() {
         return null;
     }
 
     @Override
-    public void setInventory(BaseInventory inventory) {
+    public void setInventory(SimpleInventory inventory) {
+
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public void setName(String name) {
 
     }
 

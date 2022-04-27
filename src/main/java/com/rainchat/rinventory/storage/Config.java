@@ -1,4 +1,4 @@
-package com.rainchat.rinventory.utils.storage;
+package com.rainchat.rinventory.storage;
 
 import org.yaml.snakeyaml.comments.CommentType;
 

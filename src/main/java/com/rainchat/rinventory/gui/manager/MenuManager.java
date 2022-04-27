@@ -2,13 +2,11 @@ package com.rainchat.rinventory.gui.manager;
 
 import com.rainchat.rinventory.gui.builder.MenuBuilder;
 import com.rainchat.rinventory.gui.ui.inventory.ArgsMenu;
-import com.rainchat.rinventory.utils.storage.Config;
-import com.rainchat.rinventory.utils.storage.YamlConfig;
+import com.rainchat.rinventory.storage.Config;
+import com.rainchat.rinventory.storage.YamlConfig;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-import java.security.Permissions;
 import java.util.*;
 import java.util.logging.Level;
 
@@ -61,7 +59,7 @@ public class MenuManager {
      * @param args   the arguments from the open command
      */
     public void openMenu(String name, Player player, String... args) {
-        menuMap.get(name).open(player);
+        menuMap.get(name).clone().open(player);
     }
 
     /**

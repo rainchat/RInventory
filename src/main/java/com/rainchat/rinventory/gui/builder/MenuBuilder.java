@@ -1,10 +1,9 @@
 package com.rainchat.rinventory.gui.builder;
 
 import com.rainchat.rinventory.gui.ui.inventory.ArgsMenu;
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
 import com.rainchat.rinventory.utils.builder.Builder;
 import com.rainchat.rinventory.utils.collections.CaseInsensitiveStringMap;
-import com.rainchat.rinventory.utils.storage.Config;
+import com.rainchat.rinventory.storage.Config;
 
 import java.util.Map;
 import java.util.Optional;
@@ -42,9 +41,6 @@ public class MenuBuilder extends Builder<String, ArgsMenu> {
 
         if (menu != null) {
             menu.setFromConfig(config);
-            System.out.println("Меню создалось");
-        } else {
-            System.out.println("Меню не создалось");
         }
         return menu;
     }
