@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.ui.actions;
 
 import com.rainchat.rinventory.gui.ui.click.BaseClick;
-import com.rainchat.rinventory.gui.ui.items.button.BaseAction;
+import com.rainchat.rinventory.gui.ui.button.BaseAction;
 import com.rainchat.rinventory.scheduler.RScheduler;
 
 import java.util.UUID;

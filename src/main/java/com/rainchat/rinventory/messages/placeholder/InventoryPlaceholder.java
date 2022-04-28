@@ -1,6 +1,6 @@
 package com.rainchat.rinventory.messages.placeholder;
 
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
 
 public abstract class InventoryPlaceholder<T> extends CustomPlaceholder<T> {
 

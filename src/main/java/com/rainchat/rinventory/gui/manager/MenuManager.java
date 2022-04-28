@@ -1,9 +1,8 @@
 package com.rainchat.rinventory.gui.manager;
 
 import com.rainchat.rinventory.gui.builder.MenuBuilder;
-import com.rainchat.rinventory.gui.ui.inventory.ArgsMenu;
+import com.rainchat.rinventory.gui.inventory.ArgsMenu;
 import com.rainchat.rinventory.storage.Config;
-import com.rainchat.rinventory.storage.YamlConfig;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.ui.pagination;
 
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
-import com.rainchat.rinventory.gui.ui.items.button.SimpleItem;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.ui.button.SimpleItem;
 import org.bukkit.entity.Player;
 
 import java.util.List;

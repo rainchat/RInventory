@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.builder;
 
-import com.rainchat.rinventory.gui.ui.items.button.SelectionButton;
-import com.rainchat.rinventory.gui.ui.items.constructor.items.ItemModifier;
+import com.rainchat.rinventory.gui.ui.button.SelectionButton;
+import com.rainchat.rinventory.gui.ui.items.items.ItemModifier;
 import com.rainchat.rinventory.messages.placeholder.PlaceholderSupply;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

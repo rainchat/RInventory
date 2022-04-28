@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.builder;
 
 import com.rainchat.rinventory.gui.placeholders.PlayerReplacements;
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
 import com.rainchat.rinventory.utils.builder.Builder;
 import com.rainchat.rinventory.messages.placeholder.InventoryPlaceholder;
 import com.rainchat.rinventory.messages.placeholder.PlaceholderSupply;

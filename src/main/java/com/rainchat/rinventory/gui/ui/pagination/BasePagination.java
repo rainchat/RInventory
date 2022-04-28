@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.ui.pagination;
 
 
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
 import org.bukkit.entity.Player;
 
 public interface BasePagination {

@@ -60,6 +60,18 @@ public final class RScheduler {
     }
 
     /**
+     * Runs how many ticks later.
+     *
+     * @param after Ticks.
+     * @return This class.
+     */
+    public RScheduler addAfter(long after) {
+        this.after += after;
+        return this;
+    }
+
+
+    /**
      * Runs every how many ticks.
      *
      * @param every Ticks.

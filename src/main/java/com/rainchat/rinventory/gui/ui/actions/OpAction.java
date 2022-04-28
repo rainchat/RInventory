@@ -2,7 +2,7 @@ package com.rainchat.rinventory.gui.ui.actions;
 
 
 import com.rainchat.rinventory.gui.ui.click.BaseClick;
-import com.rainchat.rinventory.gui.ui.items.button.CommandAction;
+import com.rainchat.rinventory.gui.ui.button.CommandAction;
 import com.rainchat.rinventory.scheduler.RScheduler;
 import org.bukkit.Bukkit;
 

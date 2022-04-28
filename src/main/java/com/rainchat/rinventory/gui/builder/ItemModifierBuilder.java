@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.builder;
 
-import com.rainchat.rinventory.gui.ui.items.constructor.items.ItemModifier;
-import com.rainchat.rinventory.gui.ui.items.constructor.modifier.*;
+import com.rainchat.rinventory.gui.ui.items.items.ItemModifier;
+import com.rainchat.rinventory.gui.ui.items.modifier.*;
 import com.rainchat.rinventory.utils.builder.Builder;
 
 import java.util.List;

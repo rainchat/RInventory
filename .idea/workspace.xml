@@ -9,80 +9,82 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05cabd5-bfcf-4e97-8ac8-abb80cee9f52" name="Changes" comment="0.4">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_themoep_minedown_1_7_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ActionBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ButtonBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ItemModifierBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/PaginationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/placeholders/PlayerReplacements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/placeholders/TargetReplacements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/BroadcastAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ChangePosAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/CloseMenuAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConditionAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConsoleAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/DelayAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/OpAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/PlayerAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/TellAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/BaseAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/CommandAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/SelectionButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/items/ItemMetaModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/items/ItemModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/AmountModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/DurabilityModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/HeadModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/ItemFlagModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/LoreModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/MaterialModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/NBTModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/NameModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/PlayerHeadModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/BasePagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/FromConfigPagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/OnlinePagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/SimplePagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/RChatUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/bossbar/BossBarHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/BaseReplacements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/CustomPlaceholder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/InventoryPlaceholder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/PlaceholderSupply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/ractionbar/ActionBarHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/tellraw/TellrawHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/title/TitleHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/collections/CollectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/general/BukkitUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/general/MathUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RInventory_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RInventory_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e05cabd5-bfcf-4e97-8ac8-abb80cee9f52" name="Changes" comment="0.5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Alias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/CompleteFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Completion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Default.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Optional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/SubCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/Values.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/annotations/WrongUsage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/CommandBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/CompletionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/MessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/base/ParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/CommandData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/CompletionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/MessageResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/MfUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/ParameterResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/components/TypeResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/command/exceptions/CmException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/RequirementBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/requirement/BaseRequirement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/requirement/PermissionRequirement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/requirement/Requirement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RInventory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RInventory.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/RCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/RCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ActionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ActionBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ButtonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ButtonBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ItemModifierBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/ItemModifierBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/MenuBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/MenuBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/PaginationBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/PaginationBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/PlaceholderBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/builder/PlaceholderBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/listener/ClicksListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/listener/ClicksListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/manager/InventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/manager/InventoryManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/manager/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/manager/MenuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/BroadcastAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/BroadcastAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ChangePosAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ChangePosAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/CloseMenuAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/CloseMenuAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConditionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConditionAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConsoleAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/ConsoleAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/DelayAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/DelayAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/OpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/OpAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/PlayerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/PlayerAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/TellAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/actions/TellAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/click/BaseClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/click/BaseClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/ArgsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/ArgsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/SimpleInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/SimpleInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/BaseItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/EmptyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/EmptyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/PageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/PageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/SimpleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/SimpleItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/chat/Chat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/scheduler/RScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/scheduler/RScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/scheduler/RSpam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/scheduler/RSpam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/storage/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/storage/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/utils/storage/YamlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/storage/YamlConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/ArgsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/inventory/ArgsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/BaseInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/inventory/BaseInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/inventory/SimpleInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/inventory/SimpleInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/BaseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/BaseItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/CommandAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/CommandAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/EmptyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/EmptyItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/PageItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/SelectionButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/SelectionButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/button/SimpleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/button/SimpleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/items/ItemMetaModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/items/ItemMetaModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/items/ItemModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/items/ItemModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/AmountModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/AmountModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/DurabilityModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/DurabilityModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/HeadModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/HeadModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/ItemFlagModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/ItemFlagModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/LoreModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/LoreModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/MaterialModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/MaterialModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/NBTModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/NBTModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/NameModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/NameModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/constructor/modifier/PlayerHeadModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/items/modifier/PlayerHeadModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/BasePagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/BasePagination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/FromConfigPagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/FromConfigPagination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/SimplePagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination/SimplePagination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/InventoryPlaceholder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/messages/placeholder/InventoryPlaceholder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/scheduler/RScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/scheduler/RScheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,18 +122,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/pagination" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/rainchat/rinventory/gui/ui/requirement" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\gui\ui\requirement" />
+      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\gui\ui\request" />
+      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\command" />
       <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\gui\ui\pagination" />
       <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\utils\builder" />
-      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\gui\ui" />
-      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\gui\ui\items\modifier\option" />
-      <recent name="C:\Users\super\IdeaProjects\RInventory\src\main\java\com\rainchat\rinventory\utils\chat" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rainchat.rinventory.gui.builder" />
@@ -206,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650718769532</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0.5">
+      <created>1651094912880</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651094912880</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +232,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.1" />
     <MESSAGE value="0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.4" />
+    <MESSAGE value="0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5" />
   </component>
 </project>

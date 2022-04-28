@@ -1,7 +1,7 @@
 package com.rainchat.rinventory.gui.ui.actions;
 
 import com.rainchat.rinventory.gui.ui.click.BaseClick;
-import com.rainchat.rinventory.gui.ui.items.button.BaseAction;
+import com.rainchat.rinventory.gui.ui.button.BaseAction;
 import com.rainchat.rinventory.utils.general.MathUtil;
 import com.rainchat.rinventory.scheduler.RScheduler;
 import org.bukkit.Bukkit;
@@ -29,6 +29,6 @@ public class DelayAction extends BaseAction {
       return;
     }
 
-    rScheduler.after(Integer.parseInt(finalValue)).run(() -> {});
+    rScheduler.addAfter(Integer.parseInt(finalValue)).run(() -> {});
   }
 }

@@ -4,16 +4,13 @@ package com.rainchat.rinventory.gui.builder;
 
 
 
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
 import com.rainchat.rinventory.gui.ui.pagination.FromConfigPagination;
 import com.rainchat.rinventory.gui.ui.pagination.OnlinePagination;
 import com.rainchat.rinventory.utils.builder.Builder;
-import com.rainchat.rinventory.utils.collections.CollectionUtils;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class PaginationBuilder extends Builder<String, FromConfigPagination> {
 

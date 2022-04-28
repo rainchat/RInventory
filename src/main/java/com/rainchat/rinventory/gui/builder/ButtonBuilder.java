@@ -1,9 +1,7 @@
 package com.rainchat.rinventory.gui.builder;
 
-import com.rainchat.rinventory.gui.ui.inventory.ArgsMenu;
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
-import com.rainchat.rinventory.gui.ui.items.button.SelectionButton;
-import com.rainchat.rinventory.gui.ui.items.button.SimpleItem;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.ui.button.SelectionButton;
 import com.rainchat.rinventory.utils.builder.Builder;
 import com.rainchat.rinventory.utils.collections.CaseInsensitiveStringMap;
 

@@ -2,7 +2,7 @@ package com.rainchat.rinventory.gui.manager;
 
 import com.rainchat.rinventory.gui.listener.ClicksListener;
 import com.rainchat.rinventory.gui.listener.ConnectListener;
-import com.rainchat.rinventory.gui.ui.inventory.SimpleInventory;
+import com.rainchat.rinventory.gui.inventory.SimpleInventory;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
